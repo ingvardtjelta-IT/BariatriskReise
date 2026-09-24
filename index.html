@@ -49,7 +49,7 @@
 <div class="wrap">
 
 <h1>Personvernerklæring for Bariatrisk Reise</h1>
-<p class="sist">Sist oppdatert 7. september 2026</p>
+<p class="sist">Sist oppdatert 24. september 2026</p>
 
 <h2>Kort fortalt</h2>
 <div class="kort">
@@ -57,18 +57,21 @@
   medisiner, vekt og kroppsmål — <strong>bare på din egen telefon</strong>.
   Det finnes ingen brukerkonto, ingen server som tar imot loggen din, ingen
   analyseverktøy og ingen annonser.</p>
-  <p>Tre ting forlater likevel telefonen, og du bør vite om dem: søkeord når du
+  <p>Noen ting forlater likevel telefonen, og du bør vite om dem: søkeord når du
   søker etter matvarer, strekkodenummer når du skanner, og teknisk
-  diagnostikkinformasjon fra Googles skannebibliotek. Det står forklart under.</p>
+  diagnostikkinformasjon fra Googles skannebibliotek. Bruker du
+  <strong>AI-innlesing av kostplanen</strong>, sendes bildene du velger til AI-lesing
+  — men bare etter at du har samtykket. Det står forklart under.</p>
 </div>
 
 <h2>Hvem er ansvarlig</h2>
 <p>Appen er utviklet og drives av Ingvard Tjelta, Norge.
 Spørsmål om personvern kan sendes til
 <a href="mailto:ingvard.tjelta@gmail.com">ingvard.tjelta@gmail.com</a>.</p>
-<p>Fordi appen ikke har noen server, mottar eller lagrer utvikleren
-<strong>ingen</strong> av opplysningene du fører inn. De ligger på enheten din,
-under din kontroll.</p>
+<p>Utvikleren mottar eller lagrer <strong>ingen</strong> av opplysningene du fører
+inn. De ligger på enheten din, under din kontroll. Det eneste unntaket er
+AI-innlesingen: da går bildene du velger gjennom en tjeneste utvikleren driver, som
+sender dem videre uten å lagre dem (se under).</p>
 
 <h2>Hva som lagres, og hvor</h2>
 <p>Følgende lagres lokalt på telefonen, i appens eget lagringsområde:</p>
@@ -81,6 +84,9 @@ under din kontroll.</p>
   <li>Bilder du tar av din egen kostplan</li>
   <li>Dagsnotater og tid brukt på måltider</li>
   <li>Din egen API-nøkkel til Kassal.app, hvis du legger inn en</li>
+  <li>Om og når du har samtykket til AI-innlesing</li>
+  <li>En tilfeldig enhets-id, laget av appen, som brukes til å begrense hvor mange
+      AI-innlesinger som kan gjøres per dag. Den sier ingenting om hvem du er</li>
 </ul>
 <p>Dette er helseopplysninger. De blir liggende på enheten til du sletter dem
 selv, eller sletter appen. De følger med i vanlig iPhone-sikkerhetskopi hvis du
@@ -107,7 +113,28 @@ har det slått på, og er da underlagt Apples vilkår for iCloud.</p>
         maskinvare) og bruks- og ytelsesdata for skannefunksjonen</td>
     <td>Når du bruker strekkodeskanneren</td>
   </tr>
+  <tr>
+    <td>Utviklerens lesetjeneste, driftet hos
+        <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a></td>
+    <td>Bildene av kostplanen du velger, og den tilfeldige enhets-id-en.
+        Tjenesten sender bildene videre til Anthropic og lagrer dem ikke. Den teller
+        bare antall innlesinger per enhets-id og dag, og telleren slettes etter to døgn</td>
+    <td>Bare når du trykker «Les planen», og bare etter at du har samtykket</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.anthropic.com/legal/privacy">Anthropic</a> (Claude), USA</td>
+    <td>Bildene av kostplanen. Anthropic leser dem og sender tilbake en tekst med
+        faser, regler og tilskudd, som du går gjennom før noe legges inn</td>
+    <td>Samme som over</td>
+  </tr>
 </table>
+<p><strong>Om AI-innlesingen.</strong> Et bilde av en kostplan fra sykehuset er en
+helseopplysning, og kan inneholde navn, fødselsnummer og adresse. Dekk over det før du
+tar bildet. Anthropic sletter det som sendes til dem innen 30 dager, med unntak av
+innhold som sikkerhetssystemene deres flagger, eller som loven krever at de beholder,
+og bruker det ikke til å trene modellene sine. Se
+<a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropics
+oppbevaringsregler</a>. Anthropic holder til i USA, så bildene behandles utenfor EØS.</p>
 <p>Selve strekkodegjenkjenningen skjer på enheten — kamerabildet sendes ikke
 noe sted. Men Googles bibliotek samler diagnostikk- og bruksdata, slik Google
 selv beskriver i
@@ -120,7 +147,7 @@ medisinene eller notatene dine. De får bare det som står i tabellen.</p>
 <h2>Hva appen ikke gjør</h2>
 <ul>
   <li>Ingen brukerkonto og ingen innlogging</li>
-  <li>Ingen server som tar imot helseopplysningene dine</li>
+  <li>Ingen server som lagrer helseopplysningene dine</li>
   <li>Ingen analyseverktøy, ingen sporing på tvers av apper eller nettsteder</li>
   <li>Ingen annonser og ingen deling eller salg av data</li>
   <li>Ingen kobling mot helsevesenet, Helsenorge eller Apple Health</li>
@@ -135,6 +162,9 @@ kontroll. Utvikleren har ingen tilgang til opplysningene.</p>
 gitt ved at du selv velger å søke, skanne eller legge inn en API-nøkkel. Bruker
 du ikke søk eller skanning, sendes ingenting — bortsett fra det ene
 oppstartsoppslaget mot Open Food Facts, som ikke inneholder opplysninger om deg.</p>
+<p>For AI-innlesingen er grunnlaget ditt <strong>uttrykkelige samtykke</strong>
+(personvernforordningen artikkel 9 nr. 2 bokstav a), som du gir i appen før første
+innlesing. Du kan trekke det tilbake når som helst under ⋯ → Min plan.</p>
 
 <h2>Dine valg og rettigheter</h2>
 <p>Fordi alt ligger på enheten, har du full kontroll direkte i appen:</p>
@@ -145,8 +175,10 @@ oppstartsoppslaget mot Open Food Facts, som ikke inneholder opplysninger om deg.
       slik at filen trygt kan deles</li>
   <li><strong>Slette alt</strong> med «Nullstill alle data», eller ved å slette
       appen</li>
-  <li><strong>Slutte å sende noe ut</strong> ved å ikke bruke søk og skanning.
-      Fjerner du Kassal-nøkkelen, brukes den ikke mer</li>
+  <li><strong>Slutte å sende noe ut</strong> ved å ikke bruke søk, skanning og
+      AI-innlesing. Fjerner du Kassal-nøkkelen, brukes den ikke mer</li>
+  <li><strong>Trekke samtykket</strong> til AI-innlesing under ⋯ → Min plan. Det
+      som alt er lagt inn fra planen din, blir liggende til du sletter det</li>
 </ul>
 <p>Etter personvernforordningen (GDPR) har du rett til innsyn, retting,
 sletting, begrensning og dataportabilitet. Siden utvikleren ikke har tilgang
