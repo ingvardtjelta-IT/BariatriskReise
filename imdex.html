@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personvernerklæring — Bariatrisk Reise</title>
+<style>
+  :root{
+    --bg:#F6F3EC; --panel:#FFFFFF; --ink:#1F2E28; --soft:#5B6A63;
+    --line:#E4DFD3; --forest:#2F4A3E; --clay:#C1622E; --clay-soft:#F1DDCC;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#141F1A; --panel:#1C2B24; --ink:#E9E5D9; --soft:#9AAAA1;
+      --line:#2C3D34; --forest:#82BC9E; --clay:#E28E55; --clay-soft:#3A2A1F;
+    }
+  }
+  *{ box-sizing:border-box }
+  body{
+    background:var(--bg); color:var(--ink); margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    font-size:16px; line-height:1.65;
+  }
+  .wrap{ max-width:680px; margin:0 auto; padding:48px 22px 80px }
+  h1{
+    font-family:'Iowan Old Style','Palatino Linotype',Georgia,serif;
+    font-size:30px; color:var(--forest); margin:0 0 6px; line-height:1.15;
+  }
+  .sist{ color:var(--soft); font-size:14px; margin:0 0 32px }
+  h2{
+    font-family:'Iowan Old Style','Palatino Linotype',Georgia,serif;
+    font-size:20px; color:var(--forest); margin:34px 0 10px;
+  }
+  p, li{ max-width:62ch }
+  a{ color:var(--clay) }
+  .kort{
+    background:var(--panel); border:1px solid var(--line);
+    border-radius:14px; padding:18px 20px; margin:20px 0;
+  }
+  .kort p:first-child{ margin-top:0 } .kort p:last-child{ margin-bottom:0 }
+  table{ width:100%; border-collapse:collapse; margin:14px 0; font-size:15px }
+  th,td{ text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); vertical-align:top }
+  th{ font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--soft) }
+  code{ background:var(--panel); border:1px solid var(--line); border-radius:4px; padding:1px 5px; font-size:14px }
+  footer{ margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--soft); font-size:14px }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Personvernerklæring for Bariatrisk Reise</h1>
+<p class="sist">Sist oppdatert 7. oktober 2026</p>
+
+<h2>Kort fortalt</h2>
+<div class="kort">
+  <p>Bariatrisk Reise lagrer alt du fører inn — mat, drikke, vitaminer,
+  medisiner, vekt og kroppsmål — <strong>bare på din egen telefon</strong>.
+  Det finnes ingen brukerkonto, ingen server som tar imot loggen din, ingen
+  analyseverktøy og ingen annonser.</p>
+  <p>Noen ting forlater likevel telefonen, og du bør vite om dem: søkeord når du
+  søker etter matvarer, strekkodenummer når du skanner, og teknisk
+  diagnostikkinformasjon fra Googles skannebibliotek. Bruker du <strong>AI</strong> —
+  til å lese kostplanen eller anslå et måltid fra bilder — sendes bildene du velger og det du
+  skriver om maten, til AI-lesing, men bare etter at du har samtykket. Det står forklart under.</p>
+</div>
+
+<h2>Hvem er ansvarlig</h2>
+<p>Appen er utviklet og drives av Ingvard Tjelta, Norge.
+Spørsmål om personvern kan sendes til
+<a href="mailto:ingvard.tjelta@gmail.com">ingvard.tjelta@gmail.com</a>.</p>
+<p>Utvikleren mottar eller lagrer <strong>ingen</strong> av opplysningene du fører
+inn. De ligger på enheten din, under din kontroll. Det eneste unntaket er AI: da går
+bildene du velger, og det du skriver om maten, gjennom en tjeneste utvikleren driver, som
+sender dem videre uten å lagre dem (se under).</p>
+
+<h2>Hva som lagres, og hvor</h2>
+<p>Følgende lagres lokalt på telefonen, i appens eget lagringsområde:</p>
+<ul>
+  <li>Måltidslogg med matvarer, mengder og næringsinnhold</li>
+  <li>Drikke, vitaminer og tilskudd</li>
+  <li>Medisiner du selv legger inn, med dose og tidspunkt</li>
+  <li>Vekt, kroppsmål og høyde</li>
+  <li>Operasjonsdato, inngrep, sykehus, alder og kjønn hvis du oppgir det</li>
+  <li>Bilder du tar av din egen kostplan</li>
+  <li>Dagsnotater, tid brukt på måltider og fysisk aktivitet du registrerer</li>
+  <li>Skritt, treningsøkter og vekt hentet fra Apple Helse (iPhone) eller Health Connect (Android), hvis du kobler til (se under)</li>
+  <li>Din egen API-nøkkel til Kassal.app, hvis du legger inn en</li>
+  <li>Om og når du har samtykket til AI</li>
+  <li>En tilfeldig enhets-id, laget av appen, som brukes til å begrense hvor mange
+      ganger AI kan brukes per dag. Den sier ingenting om hvem du er</li>
+</ul>
+<p>Dette er helseopplysninger. De blir liggende på enheten til du sletter dem
+selv, eller sletter appen. De følger med i vanlig iPhone-sikkerhetskopi hvis du
+har det slått på, og er da underlagt Apples vilkår for iCloud.</p>
+
+<h2>Apple Helse og Health Connect</h2>
+<p>På Android kan du på samme måte koble appen til <strong>Health Connect</strong>. Appen ber bare om
+å lese <strong>skritt</strong>, <strong>treningsøkter</strong>, <strong>aktiv energi</strong> (for å vise målt
+energi for en økt) og <strong>vekt</strong>, og om å lagre vekten du registrerer i appen. Du velger selv
+hva appen får, og endrer det i Innstillinger → Health Connect. Det som hentes, behandles akkurat som
+beskrevet for Apple Helse under.</p>
+<p>På iPhone kan du velge å koble appen til Apple Helse (HealthKit). Da leser appen
+<strong>skritt</strong>, <strong>treningsøkter</strong> og <strong>vekt</strong> fra Helse — også det Trening-appen,
+Apple Watch eller en smartvekt har lagret der — og kan lagre vekten du registrerer i appen,
+i Helse. Du velger selv hva appen får tilgang til, i iPhones eget spørsmål, og kan endre
+det når som helst i Helse-appen.</p>
+<p>Det appen henter fra Apple Helse eller Health Connect, lagres på telefonen sammen med resten av loggen din. Det
+<strong>sendes aldri ut av telefonen</strong>: ikke til utvikleren, ikke til AI-tjenesten og ikke til
+noen andre. Det brukes ikke til annonser eller markedsføring. Det kommer bare med i
+rapporten eller sikkerhetskopien hvis du selv lager og deler dem.</p>
+
+<h2>Kalender og applås</h2>
+<p>Velger du <strong>Hent fra kalenderen</strong>, leser appen avtalene i kalenderen på telefonen de neste
+seks månedene og viser dem for deg. Bare de du krysser av, legges inn i appen. Kalenderen leses
+ikke ellers, og ingenting fra den sendes ut av telefonen. Tilgangen kan trekkes tilbake i
+telefonens innstillinger.</p>
+<p>Slår du på <strong>applåsen</strong>, ber appen telefonen om å bekrefte at det er deg — med Face ID,
+fingeravtrykk eller koden. Appen får bare svaret ja eller nei, aldri selve ansiktet, fingeren
+eller koden.</p>
+
+<h2>Hva som sendes ut av appen</h2>
+<table>
+  <tr><th>Til hvem</th><th>Hva</th><th>Når</th></tr>
+  <tr>
+    <td><a href="https://kassal.app">Kassal.app</a></td>
+    <td>Søkeordet du skriver, eller strekkodenummeret du skanner, sammen med
+        din egen API-nøkkel</td>
+    <td>Bare når du søker eller skanner, og bare hvis du har lagt inn en nøkkel</td>
+  </tr>
+  <tr>
+    <td><a href="https://world.openfoodfacts.org">Open Food Facts</a></td>
+    <td>Søkeordet eller strekkodenummeret</td>
+    <td>Bare når du søker eller skanner. Appen gjør i tillegg ett oppslag ved
+        oppstart for å se om nettilgang virker</td>
+  </tr>
+  <tr>
+    <td>Google ML Kit</td>
+    <td>Teknisk informasjon om enheten (modell, operativsystemversjon,
+        maskinvare) og bruks- og ytelsesdata for skannefunksjonen</td>
+    <td>Når du bruker strekkodeskanneren</td>
+  </tr>
+  <tr>
+    <td>Utviklerens lesetjeneste, driftet hos
+        <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a></td>
+    <td>Bildene du velger — av kostplanen, eller av maten, en oppskrift eller en pakning —,
+        det du skriver om maten, den tilfeldige enhets-id-en, og når du leser inn et nytt dokument
+        fra planen: en oversikt over det som alt står i planen din (fasenavn, regler, notater og
+        tilskudd), så AI-en kan si fra om det som går igjen. Tjenesten sender det videre
+        til Anthropic og lagrer det ikke. Den teller bare antall bruk per enhets-id og dag,
+        og telleren slettes etter to døgn</td>
+    <td>Bare når du trykker «Les planen» eller «Anslå måltidet», og bare etter at du har
+        samtykket</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.anthropic.com/legal/privacy">Anthropic</a> (Claude), USA</td>
+    <td>Det samme. Anthropic leser det og sender tilbake faser, regler og tilskudd fra
+        planen, eller et anslag over hva du har spist. Du går gjennom det før noe legges inn.
+        Har du skrevet et spisested eller et merke, kan Anthropic søke det opp på nettet;
+        søket består av ord som navnet på stedet og retten, ikke bildene</td>
+    <td>Samme som over</td>
+  </tr>
+</table>
+<p><strong>Om AI.</strong> Et bilde av en kostplan fra sykehuset er en helseopplysning, og
+kan inneholde navn, fødselsnummer og adresse. Dekk over det før du tar bildet. Bilder av
+måltider og det du skriver om dem, er også opplysninger om kostholdet ditt. Anthropic sletter det som sendes til dem innen 30 dager, med unntak av
+innhold som sikkerhetssystemene deres flagger, eller som loven krever at de beholder,
+og bruker det ikke til å trene modellene sine. Se
+<a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropics
+oppbevaringsregler</a>. Anthropic holder til i USA, så bildene behandles utenfor EØS.</p>
+<p>Selve strekkodegjenkjenningen skjer på enheten — kamerabildet sendes ikke
+noe sted. Men Googles bibliotek samler diagnostikk- og bruksdata, slik Google
+selv beskriver i
+<a href="https://developers.google.com/ml-kit/ios-data-disclosure">ML Kits
+dataerklæring</a> og
+<a href="https://developers.google.com/ml-kit/terms">vilkår og personvern</a>.</p>
+<p>Ingen av disse mottakerne får måltidsloggen, vekten, kroppsmålene,
+medisinene eller notatene dine. De får bare det som står i tabellen.</p>
+
+<h2>Hva appen ikke gjør</h2>
+<ul>
+  <li>Ingen brukerkonto og ingen innlogging</li>
+  <li>Ingen server som lagrer helseopplysningene dine</li>
+  <li>Ingen analyseverktøy, ingen sporing på tvers av apper eller nettsteder</li>
+  <li>Ingen annonser og ingen deling eller salg av data</li>
+  <li>Ingen kobling mot helsevesenet eller Helsenorge. Apple Helse og Health Connect brukes bare
+      hvis du selv kobler til, og bare på telefonen</li>
+  <li>Ingen kostråd. Appen gjengir din egen plan fra sykehuset og foreslår
+      aldri doser eller kostendringer</li>
+</ul>
+
+<h2>Rettslig grunnlag</h2>
+<p>Behandlingen skjer lokalt på din enhet, på ditt eget initiativ og under din
+kontroll. Utvikleren har ingen tilgang til opplysningene.</p>
+<p>For de utgående kallene i tabellen over er grunnlaget ditt eget samtykke,
+gitt ved at du selv velger å søke, skanne eller legge inn en API-nøkkel. Bruker
+du ikke søk eller skanning, sendes ingenting — bortsett fra det ene
+oppstartsoppslaget mot Open Food Facts, som ikke inneholder opplysninger om deg.</p>
+<p>For AI er grunnlaget ditt <strong>uttrykkelige samtykke</strong>
+(personvernforordningen artikkel 9 nr. 2 bokstav a), som du gir i appen før første
+bruk. Du kan trekke det tilbake når som helst under ⋯ → Om appen.</p>
+
+<h2>Dine valg og rettigheter</h2>
+<p>Fordi alt ligger på enheten, har du full kontroll direkte i appen:</p>
+<ul>
+  <li><strong>Se og endre</strong> alt du har lagt inn, hvor som helst i appen</li>
+  <li><strong>Ta med deg dataene</strong> med «Eksporter backup (.json)» under
+      ⋯ → Data og backup. API-nøkkelen følger med vilje <em>ikke</em> med,
+      slik at filen trygt kan deles</li>
+  <li><strong>Slette alt</strong> med «Nullstill alle data», eller ved å slette
+      appen</li>
+  <li><strong>Slutte å sende noe ut</strong> ved å ikke bruke søk, skanning og AI. Fjerner du Kassal-nøkkelen, brukes den ikke mer</li>
+  <li><strong>Trekke samtykket</strong> til AI under ⋯ → Om appen. Det som alt er lagt
+      inn, blir liggende til du sletter det</li>
+</ul>
+<p>Etter personvernforordningen (GDPR) har du rett til innsyn, retting,
+sletting, begrensning og dataportabilitet. Siden utvikleren ikke har tilgang
+til opplysningene, utøver du disse rettighetene selv i appen. Ønsker du å
+klage, kan du kontakte Datatilsynet.</p>
+
+<h2>Barn</h2>
+<p>Appen er laget for voksne som skal gjennom eller har gjennomgått bariatrisk
+kirurgi, og er ikke rettet mot barn.</p>
+
+<h2>Endringer</h2>
+<p>Endres denne erklæringen, oppdateres datoen øverst. Vesentlige endringer vil
+bli opplyst om i appen.</p>
+
+<h2>Kontakt</h2>
+<p>Ingvard Tjelta, Norge<br>
+<a href="mailto:ingvard.tjelta@gmail.com">ingvard.tjelta@gmail.com</a></p>
+
+<footer>
+  Bariatrisk Reise er et hjelpemiddel til å holde oversikt, ikke medisinsk
+  rådgivning. Appen erstatter ikke oppfølgingen fra sykehuset, fastlegen eller
+  ernæringsfysiologen din.
+</footer>
+
+</div>
+</body>
+</html>
