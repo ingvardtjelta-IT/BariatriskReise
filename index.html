@@ -49,7 +49,7 @@
 <div class="wrap">
 
 <h1>Personvernerklæring for Bariatrisk Reise</h1>
-<p class="sist">Sist oppdatert 7. oktober 2026</p>
+<p class="sist">Sist oppdatert 8. oktober 2026</p>
 
 <h2>Kort fortalt</h2>
 <div class="kort">
@@ -88,6 +88,8 @@ sender dem videre uten å lagre dem (se under).</p>
   <li>Om og når du har samtykket til AI</li>
   <li>En tilfeldig enhets-id, laget av appen, som brukes til å begrense hvor mange
       ganger AI kan brukes per dag. Den sier ingenting om hvem du er</li>
+  <li>Hvis du har abonnement: en referanse til kjøpet ditt (transaksjons-id fra App Store
+      eller kjøpsnøkkel fra Google Play). Den hentes fra butikken og følger ikke med i backupen</li>
 </ul>
 <p>Dette er helseopplysninger. De blir liggende på enheten til du sletter dem
 selv, eller sletter appen. De følger med i vanlig iPhone-sikkerhetskopi hvis du
@@ -118,6 +120,16 @@ telefonens innstillinger.</p>
 fingeravtrykk eller koden. Appen får bare svaret ja eller nei, aldri selve ansiktet, fingeren
 eller koden.</p>
 
+<h2>Kjøp og abonnement</h2>
+<p>Alt i appen er gratis bortsett fra AI, som krever abonnement fordi hver bruk koster penger.
+Abonnementet kjøpes og betales i <strong>App Store</strong> (iPhone) eller <strong>Google Play</strong>
+(Android), under Apples og Googles egne vilkår og personvernerklæringer. Utvikleren får aldri
+kortopplysninger, navnet ditt eller e-postadressen din.</p>
+<p>For å vite om abonnementet gjelder, sender appen en referanse til kjøpet sammen med hver
+AI-forespørsel. Lesetjenesten spør da Apple eller Google direkte om kjøpet er gyldig, og hvilket
+nivå det gir. Svaret huskes høyst seks timer. Antall bruk telles per kjøp, og tellerne slettes
+etter to døgn (per dag) og 40 dager (per måned). Ingen andre får vite om kjøpet.</p>
+
 <h2>Hva som sendes ut av appen</h2>
 <table>
   <tr><th>Til hvem</th><th>Hva</th><th>Når</th></tr>
@@ -145,11 +157,17 @@ eller koden.</p>
     <td>Bildene du velger — av kostplanen, eller av maten, en oppskrift eller en pakning —,
         det du skriver om maten, den tilfeldige enhets-id-en, og når du leser inn et nytt dokument
         fra planen: en oversikt over det som alt står i planen din (fasenavn, regler, notater og
-        tilskudd), så AI-en kan si fra om det som går igjen. Tjenesten sender det videre
-        til Anthropic og lagrer det ikke. Den teller bare antall bruk per enhets-id og dag,
-        og telleren slettes etter to døgn</td>
+        tilskudd), så AI-en kan si fra om det som går igjen. Har du abonnement, også en
+        referanse til kjøpet. Tjenesten sender bildene og teksten videre til Anthropic og lagrer
+        dem ikke. Den teller bare antall bruk per enhets-id eller kjøp, per dag og per måned;
+        tellerne slettes etter to døgn og 40 dager</td>
     <td>Bare når du trykker «Les planen» eller «Anslå måltidet», og bare etter at du har
         samtykket</td>
+  </tr>
+  <tr>
+    <td>Apple (App Store) eller Google (Google Play)</td>
+    <td>Referansen til kjøpet ditt, sendt fra lesetjenesten for å sjekke at abonnementet gjelder</td>
+    <td>Når du bruker AI og har abonnement, høyst én gang per seks timer per kjøp</td>
   </tr>
   <tr>
     <td><a href="https://www.anthropic.com/legal/privacy">Anthropic</a> (Claude), USA</td>
@@ -195,6 +213,8 @@ kontroll. Utvikleren har ingen tilgang til opplysningene.</p>
 gitt ved at du selv velger å søke, skanne eller legge inn en API-nøkkel. Bruker
 du ikke søk eller skanning, sendes ingenting — bortsett fra det ene
 oppstartsoppslaget mot Open Food Facts, som ikke inneholder opplysninger om deg.</p>
+<p>For kontrollen av abonnementet er grunnlaget avtalen om abonnementet
+(personvernforordningen artikkel 6 nr. 1 bokstav b).</p>
 <p>For AI er grunnlaget ditt <strong>uttrykkelige samtykke</strong>
 (personvernforordningen artikkel 9 nr. 2 bokstav a), som du gir i appen før første
 bruk. Du kan trekke det tilbake når som helst under ⋯ → Om appen.</p>
