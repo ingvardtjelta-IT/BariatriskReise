@@ -49,7 +49,7 @@
 <div class="wrap">
 
 <h1>Personvernerklæring for Bariatrisk Reise</h1>
-<p class="sist">Sist oppdatert 26. oktober 2026</p>
+<p class="sist">Sist oppdatert 27. oktober 2026</p>
 
 <h2>Kort fortalt</h2>
 <div class="kort">
@@ -198,12 +198,23 @@ dataerklæring</a> og
 <a href="https://developers.google.com/ml-kit/terms">vilkår og personvern</a>.</p>
 <p>Ingen av disse mottakerne får måltidsloggen, vekten, kroppsmålene,
 medisinene eller notatene dine. De får bare det som står i tabellen.</p>
-<p><strong>Når du deler et måltid.</strong> «Del måltidet» lager en tekst med en lenke. Selve
-måltidet — varene, mengdene og næringsinnholdet — står i lenken, etter tegnet #. Den delen sendes
-aldri til noen tjeneste når lenken åpnes. Lenken peker til en liten side hos Cloudflare som bare
-forteller telefonen at den skal åpnes i appen, og som viser måltidet for den som ikke har appen.
-Siden lagrer ingenting. Den du deler med, ser det du deler, og velger selv om det skal inn i
-sin egen logg. Du bestemmer hvem som får lenken.</p>
+<p><strong>Når du deler et måltid.</strong> «Del måltidet» sender varene, mengdene og
+næringsinnholdet i det ene måltidet til en liten tjeneste hos Cloudflare, som lagrer dem i 30 dager
+og gir tilbake en kort lenke. Du deler lenken selv, med den du vil. Det lagres ingen navn,
+enhets-id, plan, vekt eller annet om deg — bare selve måltidet. Etter 30 dager slettes det. Tjenesten
+fører ingen logg, og tar bare vare på et døgnstemplet, ugjenkallelig avtrykk av IP-adressen i et
+døgn for å begrense misbruk. Den du deler med, ser det du deler og velger selv om det skal inn i
+sin egen logg. Uten nett lages i stedet en lenke der måltidet står i selve lenken, og da lagres ingenting hos oss.</p>
+<p><strong>Brukerdelt (oppskrifter fra andre brukere).</strong> Av som standard; slås på under Om deg. Deler du en
+oppskrift, sendes navnet på retten, ingrediensene med mengder og næringsinnhold, fremgangsmåten, tid, porsjoner og
+bildet (om du har lagt til ett) til en tjeneste hos Cloudflare, der database og bilder ligger i EU. Utvikleren leser oppskriften og godkjenner den før den blir synlig for andre som har slått på
+Brukerdelt. Det lagres ikke navn, e-post eller enhets-id — bare et avtrykk av en tilfeldig nøkkel som ligger på telefonen
+din, slik at du kan se status og slette det du har delt. Bildet tegnes på nytt i appen før det sendes, så posisjon og
+andre metadata fra kameraet blir ikke med. Rapporterer du en oppskrift, lagres grunnen du velger. Tjenesten fører ingen
+logg, og tar bare vare på et døgnstemplet avtrykk av IP-adressen i et døgn for å begrense misbruk. Det du deler, ligger
+der til du fjerner det (i oppskriften, eller ved å slå av Brukerdelt og velge å fjerne alt) eller utvikleren tar det ned.
+Oppskriftene er laget av andre brukere, ikke av sykehuset eller appen. Varslene om allergier og planen din regnes ut på
+telefonen; planen og allergiene dine sendes aldri.</p>
 
 <h2>Hva appen ikke gjør</h2>
 <ul>
@@ -224,6 +235,9 @@ kontroll. Utvikleren har ingen tilgang til opplysningene.</p>
 gitt ved at du selv velger å søke, skanne eller legge inn en API-nøkkel. Bruker
 du ikke søk eller skanning, sendes ingenting — bortsett fra det ene
 oppstartsoppslaget mot Open Food Facts, som ikke inneholder opplysninger om deg.</p>
+<p>For Brukerdelt er grunnlaget ditt samtykke, gitt ved at du slår det på og selv velger hva du deler
+(personvernforordningen artikkel 6 nr. 1 bokstav a). Oppskriftene skal ikke inneholde helseopplysninger; skriv ikke
+noe om deg selv i dem.</p>
 <p>For kontrollen av abonnementet er grunnlaget avtalen om abonnementet
 (personvernforordningen artikkel 6 nr. 1 bokstav b).</p>
 <p>For AI er grunnlaget ditt <strong>uttrykkelige samtykke</strong>
@@ -240,6 +254,8 @@ bruk. Du kan trekke det tilbake når som helst under menyen øverst til høyre �
   <li><strong>Slette alt</strong> med «Nullstill alle data», eller ved å slette
       appen</li>
   <li><strong>Slutte å sende noe ut</strong> ved å ikke bruke søk, skanning og AI. Fjerner du Kassal-nøkkelen, brukes den ikke mer</li>
+  <li><strong>Fjerne det du har delt i Brukerdelt</strong> fra oppskriften («Fjern fra Brukerdelt»), eller alt på én
+      gang ved å slå av Brukerdelt under Om deg</li>
   <li><strong>Trekke samtykket</strong> til AI under menyen øverst til høyre → Om appen. Det som alt er lagt
       inn, blir liggende til du sletter det</li>
 </ul>
