@@ -49,7 +49,7 @@
 <div class="wrap">
 
 <h1>Privatlivspolitik for Bariatrisk Reise</h1>
-<p class="sist">Sidst opdateret 2. november 2026<br>
+<p class="sist">Sidst opdateret 5. november 2026<br>
 <a href="./" lang="nb">Norsk</a> · <a href="sv.html" lang="sv">Svenska</a> · <a href="en.html" lang="en">English</a></p>
 
 <h2>Kort fortalt</h2>
@@ -62,7 +62,8 @@
   søger efter fødevarer, stregkodenumre, når du scanner, og teknisk
   diagnosticeringsinformation fra Googles scannerbibliotek. Bruger du <strong>AI</strong> —
   til at læse kostplanen eller estimere et måltid ud fra billeder — sendes de billeder, du vælger, og det, du
-  skriver om maden, til AI-læsning, men kun efter at du har givet samtykke. Det er forklaret nedenfor.</p>
+  skriver om maden, til AI-læsning, men kun efter at du har givet samtykke. Spørger du BariAI om din plan (iPhone og iPad), sendes spørgsmålene
+  og en oversigt over din plan på samme måde. Det er forklaret nedenfor.</p>
 </div>
 
 <h2>Hvem er ansvarlig</h2>
@@ -71,7 +72,7 @@ Spørgsmål om privatliv kan sendes til
 <a href="mailto:ingvard.tjelta@gmail.com">ingvard.tjelta@gmail.com</a>.</p>
 <p>Udvikleren modtager eller gemmer <strong>ingen</strong> af de oplysninger, du
 registrerer. De ligger på din enhed, under din kontrol. Den eneste undtagelse er AI: Her går
-de billeder, du vælger, og det, du skriver om maden, gennem en tjeneste, som udvikleren driver, og som
+de billeder, du vælger, det, du skriver om maden, og det, du spørger BariAI om, gennem en tjeneste, som udvikleren driver, og som
 sender dem videre uden at gemme dem (se nedenfor).</p>
 
 <h2>Hvad der gemmes, og hvor</h2>
@@ -168,7 +169,7 @@ efter to døgn (pr. dag) og 40 dage (pr. måned). Ingen andre får kendskab til 
         reference til købet. Tjenesten sender billederne og teksten videre til Anthropic og gemmer
         dem ikke. Den tæller kun antallet af brug pr. enheds-id eller køb, pr. dag og pr. måned;
         tællerne slettes efter to døgn og 40 dage</td>
-    <td>Kun når du trykker »Indlæs planen med AI« eller »Estimér måltidet«, og kun efter at du har
+    <td>Kun når du trykker »Indlæs planen med AI« eller »Estimér måltidet« eller spørger BariAI, og kun efter at du har
         givet samtykke</td>
   </tr>
   <tr>
@@ -180,6 +181,7 @@ efter to døgn (pr. dag) og 40 dage (pr. måned). Ingen andre får kendskab til 
     <td><a href="https://www.anthropic.com/legal/privacy">Anthropic</a> (Claude), USA</td>
     <td>Det samme. Anthropic læser det og sender faser, regler og tilskud fra
         planen tilbage, eller et estimat over, hvad du har spist. Du gennemgår det, før noget lægges ind.
+        Spørger du BariAI, sender Anthropic svaret tilbage med kilde i planen.
         Har du skrevet et spisested eller et mærke, kan Anthropic søge det op på nettet;
         søgningen består af ord som navnet på stedet og retten, ikke billederne</td>
     <td>Samme som ovenfor</td>
@@ -192,6 +194,12 @@ indhold, som deres sikkerhedssystemer markerer, eller som loven kræver, at de o
 og bruger det ikke til at træne deres modeller. Se
 <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropics
 regler for opbevaring</a>. Anthropic holder til i USA, så billederne behandles uden for EØS.</p>
+<p><strong>Når du spørger BariAI</strong> (iPhone og iPad). BariAI svarer på spørgsmål om din plan, med kilde i planen,
+og svarene er mærket som AI. Så sendes spørgsmålene og en oversigt over din plan: operationstypen og hvilken dag du er
+på, alle faser med dage, regler, dagsliste og mål, noterne og tilskuddene, punkterne i »Tjek opsætningen«, allergier og
+det, du ikke tåler eller ikke kan lide, dine mål, måltidsrytmen, opskrifter fra kogebogen og et resumé af tallene fra
+i dag og den seneste uge. Navn, datoer, vægt, kropsmål, medicin, dagsnoter og billeder sendes ikke. Samtalen ligger kun
+i appen, mens den er åben; tjenesten gemmer den ikke, og Anthropic sletter den inden for 30 dage.</p>
 <p>Selve stregkodegenkendelsen sker på enheden — kamerabilledet sendes ikke
 nogen steder hen. Men Googles bibliotek indsamler diagnosticerings- og brugsdata, som Google
 selv beskriver i
@@ -199,7 +207,7 @@ selv beskriver i
 dataerklæring</a> og
 <a href="https://developers.google.com/ml-kit/terms">vilkår og privatliv</a>.</p>
 <p>Ingen af disse modtagere får din måltidslog, vægt, dine kropsmål,
-din medicin eller dine notater. De får kun det, der står i tabellen.</p>
+din medicin eller dine notater. De får kun det, der står i tabellen og under »Når du spørger BariAI«.</p>
 <p><strong>Når du deler et måltid.</strong> »Del måltidet« sender varerne, mængderne og
 næringsindholdet i det ene måltid til en lille tjeneste hos Cloudflare, som gemmer dem i 30 dage
 og giver et kort link tilbage. Du deler selv linket med, hvem du vil. Der gemmes intet navn,
@@ -226,8 +234,8 @@ telefonen; din plan og dine allergier sendes aldrig.</p>
   <li>Ingen annoncer og ingen deling eller salg af data</li>
   <li>Ingen forbindelse til sundhedsvæsenet eller sundhed.dk. Apple Sundhed og Health Connect bruges kun,
       hvis du selv forbinder appen, og kun på telefonen</li>
-  <li>Ingen kostråd. Appen gengiver din egen plan fra hospitalet og foreslår
-      aldrig doser eller ændringer i kosten</li>
+  <li>Ingen individuelle råd. Appen gengiver og forklarer din egen plan fra hospitalet og foreslår
+      aldrig doser eller ændringer i planen</li>
 </ul>
 
 <h2>Retsgrundlag</h2>
